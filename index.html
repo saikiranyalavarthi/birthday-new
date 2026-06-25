@@ -173,43 +173,43 @@
         right: 0;
         transform: rotate(30deg) scaleX(-1);
       }
-     .birthday-image{
-    width:320px;
-    height:320px;
-    object-fit:cover;
-    display:block;
-    margin:20px auto 30px;
-    border-radius:50%;
-    padding:8px;
-    background:linear-gradient(135deg,#FFD700,#FF69B4,#8A2BE2,#00E5FF);
-    box-shadow:
-        0 0 25px rgba(255,215,0,.6),
-        0 0 50px rgba(255,105,180,.4),
-        0 15px 40px rgba(0,0,0,.4);
-    animation:glow 2s infinite alternate;
-    transition:.4s ease;
-}
-
-.birthday-image:hover{
-    transform:scale(1.06) rotate(2deg);
-}
-
-.birthday-image img{
-    border-radius:50%;
-}
-
-@keyframes glow{
-    from{
+      .birthday-image {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+        margin: 20px auto 30px;
+        border-radius: 50%;
+        padding: 8px;
+        background: linear-gradient(135deg, #ffd700, #ff69b4, #8a2be2, #00e5ff);
         box-shadow:
-        0 0 20px rgba(255,215,0,.5),
-        0 0 40px rgba(255,105,180,.3);
-    }
-    to{
-        box-shadow:
-        0 0 35px rgba(255,215,0,.9),
-        0 0 70px rgba(255,105,180,.6);
-    }
-}
+          0 0 25px rgba(255, 215, 0, 0.6),
+          0 0 50px rgba(255, 105, 180, 0.4),
+          0 15px 40px rgba(0, 0, 0, 0.4);
+        animation: glow 2s infinite alternate;
+        transition: 0.4s ease;
+      }
+
+      .birthday-image:hover {
+        transform: scale(1.06) rotate(2deg);
+      }
+
+      .birthday-image img {
+        border-radius: 50%;
+      }
+
+      @keyframes glow {
+        from {
+          box-shadow:
+            0 0 20px rgba(255, 215, 0, 0.5),
+            0 0 40px rgba(255, 105, 180, 0.3);
+        }
+        to {
+          box-shadow:
+            0 0 35px rgba(255, 215, 0, 0.9),
+            0 0 70px rgba(255, 105, 180, 0.6);
+        }
+      }
       .bow-center {
         position: absolute;
         bottom: 0;
@@ -514,13 +514,21 @@
         <circle cx="75" cy="65" r="3" fill="#f39c12" />
       </svg>
 
-      <img src="birthday.jpeg" alt="Happy Birthday" class="birthday-image" width="100px" height="100px" />
+      <img
+        src="birthday.jpeg"
+        alt="Happy Birthday"
+        class="birthday-image"
+        width="100px"
+        height="100px"
+      />
 
       <p class="wish-sub">
         <span class="wish-emoji">🌸</span>
-        Wishing you a day as wonderful and radiant as you are.<br />
-        May every moment be filled with joy, laughter & endless blessings!<br />
-        <span class="wish-emoji">🎂✨🎈</span>
+        Happy Birthday, <strong>Anjini Madam!</strong> 🎂<br />
+        Wishing you joy, happiness, good health, success, and countless
+        beautiful moments today and always.<br />
+        Have a fantastic celebration! 🎉🎈💖<br />
+        <!-- <span class="wish-emoji">🎂✨🎁🌸</span> -->
       </p>
 
       <button class="btn" id="celebrateBtn">Celebrate Again 🎈</button>
